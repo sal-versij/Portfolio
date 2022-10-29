@@ -1,10 +1,13 @@
-import {defineConfig} from 'vite'
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-    plugins: [],
-    theme: {
-        extend: {},
-    },
-    content: ["./index.html", './src/**/*.{svelte,js,ts}'],
-    darkMode: 'class',
+	plugins: [],
+	theme: {
+		extend: {},
+		container: {
+			center: true,
+		},
+	},
+	content: ['./index.html', './src/**/*.{svelte,js,ts}'],
+	darkMode: 'class',
 });
